@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Responsive Grocery Store Website</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/userProfile.css" type="text/css">
+
+</head>
+<body>
+    
+    <header class="header">
+
+        <a href="#" class="logo"> <i class="fas fa-shopping-cart"></i> EveryDay Mart </a>
+
+        <nav class="navbar">
+            <a href="index.html">home</a>
+            <a href="userProfile.html">User Profile</a>
+
+        </nav>
+
+        <div class="icons">
+            <div id="cart-btn" class="fas fa-shopping-basket"></div>
+            <div id="login-btn" class="fas fa-user"></div>
+            <div id="menu-btn" class="fas fa-bars"></div>
+        </div>
+
+        <!-- shopping cart -->
+
+        <div class="shopping-cart">
+
+            <div class="box">
+                <i class="fas fa-times"></i>
+                <img src="images/cart1.jpg" alt="">
+                <div class="content">
+                    <h3>side dish</h3>
+                    <span class="price">$14.99</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-times"></i>
+                <img src="images/cart2.jpg" alt="">
+                <div class="content">
+                    <h3>side dish</h3>
+                    <span class="price">$15.99</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-times"></i>
+                <img src="images/cart3.png" alt="">
+                <div class="content">
+                    <h3>side dish</h3>
+                    <span class="price">$14.99</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-times"></i>
+                <img src="images/cart4.jpg" alt="">
+                <div class="content">
+                    <h3>side dish</h3>
+                    <span class="price">$18.99</span>
+                </div>
+            </div>
+            <h3 class="total"> total: <span> $56.89</span></h3>
+            <a href="#" class="btn">checkout</a>
+        </div>
+
+        <!-- end -->
+
+        <!-- login -->
+
+        <form action="" class="login-form">
+
+            <h3>login form</h3>
+
+            <input type="email" placeholder="enter your email" class="box">
+            <input type="password" placeholder="enter your password" class="box">
+
+            <div class="remember">
+                <input type="checkbox" name="" id="remember-me">
+                <label for="remember-me">remember me</label>
+            </div>
+            <a href="#" class="btn"> login </a>
+
+        </form>
+
+    </header>
+
+    <!-- end -->
+
+    <br><br><br><br><br><br><br><br><br><br>
+    
+    
+        <!-- User Details -->
+        <h2 class="userHeading">User Details</h2>
+        <div class="form-wrapper">
+            <div class="user-details-box">
+                <form method="post" action="./php/update_process.php">
+                    <h1>Hello, John Doe</h1>
+                    <label for="full_name">Full Name:</label><br>
+                    <input type="text" id="full_name" name="full_name" value="John Doe"><br>
+                    <label for="username">Username:</label><br>
+                    <input type="text" id="username" name="username" value="johndoe" readonly><br>
+                    <label for="email">Email:</label><br>
+                    <input type="text" id="email" name="email" value="john.doe@example.com"><br>
+                    <div id="btn-wrap">
+                        <input type="submit" value="UPDATE">
+                        <button type="button" onclick="deleteAccount()" id="delete-btn">DELETE PROFILE</button>
+                    </div>
+                </form>
+            </div>
+            <!-- Password Box -->
+            <div class="user-password-box">
+                <form action="./php/update_password.php" method="post">
+                    <label for="old_password">Old Password:</label>
+                    <input type="password" id="old_password" name="old_password" required>
+                    <label for="new_password">New Password:</label>
+                    <input type="password" id="new_password" name="new_password" required>
+                    <label for="confNew_password">Re-Enter Password:</label>
+                    <input type="password" id="confNew_password" name="confNew_password" required>
+                    <input type="submit" value="Change Password" onclick="return alert('Password successfully changed')">
+                </form>
+            </div>
+        </div>
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

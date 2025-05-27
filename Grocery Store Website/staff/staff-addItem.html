@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../css/staff/staff-addFlight.css" type="text/css">
+
+    <script src="myScript.js"></script>
+
+</head>
+<body>
+
+    <!-- Heading code lines -->
+    <div id="heading">
+        <img src="../images/cart-logo.png" width="100px" height="100px" class="logo">
+        <h1 class="mainHeadline">Take it home,get it from us</h1>
+        <a href="../php/logout.php">
+            <img class="userLogo" width="50px" height="50px" src="../images/user-circle.png">
+            <span>Logout</span>
+        </a>
+    </div>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <h2>Staff Panel</h2>
+        <a href="staff.html">Dashboard</a>
+        <a href="staff-addItem.html">Add Items</a>
+        <a href="staff-itemList.html">Manage Items</a>
+    </div>
+
+    <!-- Form container -->
+    <div class="form-container">
+        <form method="post" action="#">
+
+            <h2 class="form-title">ADD GROCERY ITEM</h2>
+
+            <label for="itemName">Item Name</label>
+            <input type="text" id="itemName" name="itemName" placeholder="Enter item name" required> <br><br>
+
+            <label for="category">Category</label>
+            <select id="category" name="category">
+                <option value="Fruits">Fruits</option>
+                <option value="Vegetables">Vegetables</option>
+                <option value="Dairy">Dairy</option>
+                <option value="Bakery">Bakery</option>
+                <option value="Meat">Meat</option>
+                <option value="Beverages">Beverages</option>
+                <option value="Snacks">Snacks</option>
+            </select> <br><br>
+
+            <label for="price">Price</label>
+            <input type="text" id="price" name="price" placeholder="Enter price" required> <br><br>
+
+            <label for="quantity">Quantity</label>
+            <input type="number" id="quantity" name="quantity" placeholder="Enter quantity" required> <br><br>
+
+            <label for="supplier">Description</label>
+            <input type="text" id="supplier" name="supplier" placeholder="Enter Description"> <br><br>
+
+            <button type="submit" class="proceed-button">Add Item</button>
+        </form>
+    </div>
+
+
+    <div class="footer">
+        <img src="../images/cart-logo.png" alt="Airline Logo" width="100px" height="100px" class="logo">
+        <div class="content-wrapper">
+            <h1 class="bottomHeadline">Follow Us On</h1>
+            <div class="socialMedia-icon-container">
+                <img src="../images/icon-facebook.png" alt="Facebook" width="30px" height="30px">
+                <img src="../images/icon-twitter.png" alt="Twitter" width="30px" height="30px">
+                <img src="../images/icon-instagram.png" alt="Instagram" width="30px" height="30px">
+                <img src="../images/icon-linkedin.png" alt="LinkedIn" width="30px" height="30px">
+            </div>
+        </div>
+        <div class="email-container">
+            <p>Subscribe for our latest offers...</p>
+            <input type="search" name="a" placeholder="Email address">
+            <img src="../images/icon-email.png" alt="email" width="30px" height="30px">
+            <p>Terms of use. Privacy Policy. Cookies</p>
+        </div>
+    </div>
+
